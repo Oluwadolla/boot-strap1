@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div class="menu">
+    <ul>
+     <lil><a class="badges" href="badges.html">badges</a></lil>
+      <lil><a class="button-groups" href="button-groups.html">button-groups</a></lil>
+        <lil><a class="buttons" href="buttons.html">buttons</a></lil>
+        <lil><a class="cards" href="cards.html">cards</a></lil>
+        <lil><a class="carousel" href="carousel.html">carousel</a></lil>
+        <lil><a class="color" href="color.html">color</a></lil>   
+     <lil><a class="dark-mode" href="dark-mode.html">dark-mode</a></lil>
+     <lil><a class="dropdowns" href="dropdowns.html">dropdowns</a></lil>
+       <lil><a class="flex" href="flex.html">flex</a></lil>
+       <lil><a class="images" href="images.html">images</a></lil>
+       <lil><a class="index" href="index.html">index</a></lil>
+       <lil><a class="jumbotron" href="jumbotron.html">jumbotron</a></lil>    
+       <lil><a class="list-groups" href="badges.html">badges</a></lil>
+       <lil><a class="button-groups" href="list-groups.html">list-groups</a></lil>
+         <lil><a class="modal" href="modal.html">modal</a></lil>
+         <lil><a class="navbar" href="navbar.html">navbar</a></lil>
+         <lil><a class="navs" href="navs.html">navs.html</a></lil>
+         <lil><a class="offcanvas" href="offcanvas.html">offcanvas</a></lil>    
+       <lil><a class="pagination" href="pagination.html">pagination</a></lil>
+       <lil><a class="popover" href="progressbars.html">progressbars</a></lil>
+         <lil><a class="scrollspy" href="scrollspy.html">scrollspy</a></lil>
+         <lil><a class="spinners" href="spinners.html">spinners</a></lil>
+         <lil><a class="tables" href="tables.html">tables</a></lil>
+         <lil><a class="toast" href="toast.html">toast</a></lil>    
+     <lil><a class="tooltip" href="tooltip.html">tooltip</a></lil>
+     <lil><a class="typography" href="typography.html">typography</a></lil>
+       <lil><a class="utilities" href="utilities.html">utilities</a></lil>
+    </ul>
+</div>
+
+
+<div class="container mt-5">
+  <h3>Popover Positioning</h3>
+  <p>Click on the links to see the popover in action:</p>
+  <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Content">Top</a>
+  <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Content">Bottom</a>
+  <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Content">Left</a>
+  <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Content">Right</a>
+</div>
+
+<script>
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+</script>
+
+</body>
+</html>
